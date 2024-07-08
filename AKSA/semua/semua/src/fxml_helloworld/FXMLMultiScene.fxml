@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.FXMLMultiSceneController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="133.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButtonSceneBar" text="Bar Chart">
+                     <VBox.margin>
+                        <Insets left="12.0" top="100.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonSceneLine" text="Line Chart">
+                     <VBox.margin>
+                        <Insets left="12.0" top="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleButtonScenePie" text="Pie Chart">
+                     <VBox.margin>
+                        <Insets left="12.0" top="12.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

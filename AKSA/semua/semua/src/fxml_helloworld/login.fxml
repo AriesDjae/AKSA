@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.LoginController">
+    <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #508D4E;">
+         <children>
+            <Label layoutX="232.0" layoutY="40.0" prefHeight="34.0" prefWidth="235.0" text="Welcome to Recos!" textAlignment="CENTER" textFill="#d6efd8">
+               <font>
+                  <Font name="Corbel Bold" size="28.0" />
+               </font>
+            </Label>
+            <Text fill="#d6efd8" layoutX="189.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“I agree to the terms and conditions as set out by the user agreement and Privacy Policy”" textAlignment="CENTER" wrappingWidth="321.00408935546875">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+              <Button fx:id="ButtonLogin" layoutX="270.0" layoutY="402.0" onAction="#handleLogin" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #50B498;" text="Login" textFill="#0c330a" />
+            <Hyperlink fx:id="login_registerAccount" layoutX="270.0" layoutY="372.0" onAction="#switchToRegisterPage" prefHeight="22.0" prefWidth="159.0" text="don’t have account? Register" textFill="#031fff">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="login_selecShowPassword" layoutX="290.0" layoutY="347.0" mnemonicParsing="false" onAction="#change" text="Show Password" textFill="#d6efd8" />
+            <PasswordField fx:id="login_password" layoutX="232.0" layoutY="308.0" onAction="#change" prefHeight="26.0" prefWidth="235.0" promptText="Password" />
+            <TextField fx:id="login_username" layoutX="232.0" layoutY="271.0" prefHeight="28.0" prefWidth="235.0" promptText="Username" />
+              <Label fx:id="label" layoutX="235.0" layoutY="241.0" minHeight="16" minWidth="69" text="Login" textFill="#d6efd8">
+               <font>
+                  <Font name="Poppins Bold" size="11.686956405639648" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="login_showPassword" layoutX="282.0" layoutY="132.0" prefHeight="28.0" prefWidth="235.0" promptText="Password" visible="false" />
+    </children>
+</AnchorPane>

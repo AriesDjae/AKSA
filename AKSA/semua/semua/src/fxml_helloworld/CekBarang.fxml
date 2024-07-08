@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #508D4E;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CekBarangController">
+   <children>
+      <Pane layoutX="150.0" layoutY="35.0" prefHeight="330.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="btnUpload" layoutX="12.0" layoutY="63.0" mnemonicParsing="false" onAction="#toFile" text="Upload file" />
+            <TextField fx:id="inpHarga" layoutX="14.0" layoutY="120.0" />
+            <TextField fx:id="inpStock" layoutX="14.0" layoutY="175.0" />
+            <TextField fx:id="intDeskripsi" layoutX="16.0" layoutY="232.0" />
+            <Label layoutX="13.0" layoutY="40.0" text="Foto barang" />
+            <Label layoutX="14.0" layoutY="97.0" text="Harga" />
+            <Label layoutX="16.0" layoutY="150.0" text="Stock" />
+            <Label layoutX="17.0" layoutY="207.0" text="Deskripsi" />
+            <Label layoutX="90.0" layoutY="6.0" text="Pengecekan barang">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="124.0" layoutY="291.0" mnemonicParsing="false" text="Submit" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

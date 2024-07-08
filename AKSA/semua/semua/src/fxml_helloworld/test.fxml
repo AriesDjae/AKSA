@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="172.0" prefHeight="400.0" prefWidth="430.0" style="-fx-background-color: #508D4E;">
+         <children>
+            <TextField layoutX="264.0" layoutY="14.0" style="-fx-background-color: #ffffff;">
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="385.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../211818_search_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../cart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../mail.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="28.0" layoutY="70.0" prefHeight="130.0" prefWidth="375.0" style="-fx-background-color: #1a5319;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../IMG_0756.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="335.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../cart%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="139.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CERMIN RAMAH LINGKUNGAN">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="139.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp.240.000" wrappingWidth="161.77468872070312">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="28.0" layoutY="219.0" prefHeight="130.0" prefWidth="375.0" style="-fx-background-color: #1a5319;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../IMG_0755.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="335.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../cart%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="138.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLASTIK RAMAH LINKUNGAN (isi 10)">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="138.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp.20.000" wrappingWidth="161.77468872070312">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="400.0" prefWidth="172.0" style="-fx-background-color: #d6efd8;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="57.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="76.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label layoutX="73.0" layoutY="118.0" text="Label" />
+         </children>
+      </Pane>
+      <Pane layoutX="199.0" layoutY="375.0" prefHeight="26.0" prefWidth="375.0" style="-fx-background-color: #1a5319;" />
+   </children>
+</AnchorPane>

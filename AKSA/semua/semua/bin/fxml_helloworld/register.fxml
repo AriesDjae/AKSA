@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.RegisterController">
+    <children>
+        <Button fx:id="ButtonRegister" layoutX="333.0" layoutY="361.0" onAction="#handleButtonRegisterAction" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #AC0000;" text="Register" textFill="WHITE" />
+        <Label fx:id="label" layoutX="282.0" layoutY="80.0" minHeight="16" minWidth="69" text="Register">
+         <font>
+            <Font name="Poppins Bold" size="11.686956405639648" />
+         </font></Label>
+      <TextField fx:id="fname" layoutX="282.0" layoutY="110.0" prefHeight="28.0" prefWidth="115.0" promptText="First Name" />
+      <TextField fx:id="lname" layoutX="404.0" layoutY="110.0" prefHeight="28.0" prefWidth="115.0" promptText="Last Name" />
+      <TextField fx:id="username" layoutX="282.0" layoutY="150.0" prefHeight="28.0" prefWidth="235.0" promptText="Username" />
+      <Text layoutX="282.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“I agree to the terms and conditions as set out by the user agreement and Privacy Policy”" wrappingWidth="321.00408935546875">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="282.0" layoutY="191.0" onAction="#change" prefHeight="26.0" prefWidth="235.0" promptText="Password" />
+      <TextField fx:id="showPassword" layoutX="282.0" layoutY="190.0" prefHeight="28.0" prefWidth="235.0" promptText="Password" visible="false" />
+      <CheckBox fx:id="selecShowPassword" layoutX="280.0" layoutY="226.0" mnemonicParsing="false" onAction="#change" text="Show Password" />
+      <PasswordField fx:id="cpassword" layoutX="282.0" layoutY="251.0" onAction="#change1" prefHeight="26.0" prefWidth="235.0" promptText="Confirm Password" />
+      <TextField fx:id="showcPassword" layoutX="282.0" layoutY="250.0" prefHeight="28.0" prefWidth="235.0" promptText="Password" visible="false" />
+      <CheckBox fx:id="selecShowPassword1" layoutX="281.0" layoutY="285.0" mnemonicParsing="false" onAction="#change1" text="Show Password" />
+      <AnchorPane prefHeight="500.0" prefWidth="235.0" style="-fx-background-color: #AC0000;">
+         <children>
+            <Label layoutX="38.0" layoutY="184.0" prefHeight="23.0" prefWidth="159.0" text="Welcome to MF!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
