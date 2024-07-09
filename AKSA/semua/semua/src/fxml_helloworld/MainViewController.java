@@ -34,9 +34,20 @@ public class MainViewController {
     private Button btnUploadfoto;
     
     @FXML
-    void detailCermin(ActionEvent event) {
+    void detailCermin(ActionEvent event) throws Exception {
+        URL fxmlUrl = getClass().getResource("/fxml_helloworld/ProductDetail.fxml");
+        FXMLLoader loader = new FXMLLoader(fxmlUrl);
+        Parent root = loader.load();
 
+        // Dapatkan stage dari event yang diterima
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        // Atur scene baru ke stage
+        stage.setScene(new Scene(root, 700, 500));
+        stage.setTitle("Detail Produk");
+        // Tampilkan scene baru
+        stage.show();
     }
+
     @FXML
     void keMultiScene(ActionEvent event) throws IOException{
         URL fxmlUrl = getClass().getResource("/fxml_helloworld/FXMLMultiScene.fxml");
