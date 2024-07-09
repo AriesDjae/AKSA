@@ -55,10 +55,11 @@ public class LoginController {
 
         if (authenticate(username, password)) {
             showAlert("Success", "Login successful");
-            root = FXMLLoader.load(getClass().getResource("Viewbeli.fxml"));
+            root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
+            stage.setTitle("Main");
             stage.show();
         } else {
             showAlert("Error", "Invalid username or password");
